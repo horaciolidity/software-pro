@@ -64,6 +64,24 @@
             align-items: center;
         }
 
+        .animated-button {
+            display: inline-block;
+            padding: 15px 30px;
+            margin: 20px;
+            background: #ff6600;
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(255, 102, 0, 0.8);
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s;
+        }
+
+        .animated-button:hover {
+            transform: scale(1.1);
+            box-shadow: 0 0 20px rgba(255, 102, 0, 1);
+        }
+
         @keyframes fadeIn {
             from { opacity: 0; }
             to { opacity: 1; }
@@ -89,6 +107,7 @@
             <li>Integración con plataformas existentes</li>
             <li>Seguridad y mantenimiento de sistemas</li>
         </ul>
+        <a href="#contacto" class="animated-button">Solicitar Información</a>
     </section>
 
     <section id="nosotros">
